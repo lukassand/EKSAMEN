@@ -1,0 +1,74 @@
+.om_mig_section {
+    margin: 20px;
+    padding: 20px;
+    margin-top: -1px;
+    border: 5px solid blue;
+    font-size: small;
+}
+
+ .om_mig_img{
+        width: 300px;   
+        border: #ff0000 5px groove;
+}
+
+/* layout: stack on small screens, side-by-side on larger */
+.om_mig_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+
+
+.om_mig_section{
+    background-image: url("../img/stars.gif");
+ background-color: #ff0000;
+ text-align: center;
+ padding-bottom: 50px;
+}
+
+.om_mig_section h1 {
+    color: #e1ff00;
+    text-shadow: #ff0000 2px 2px 4px;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.om_mig_section h2, .om_mig_section h3, .om_mig_section h4 {
+    color: #e1ff00;
+    text-shadow: #ff0000 1px 1px 4px;
+    padding: 8px 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: small;
+}
+
+@media (min-width: 768px) {
+
+    .om_mig_img{
+    width: 300px;
+        margin-left: auto;
+    }
+
+        /* On larger screens place image left and text to the right */
+        .om_mig_section{
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .om_mig_section h1, .om_mig_section h2, .om_mig_section h3, .om_mig_section h4 {
+            padding: 10px 16px;
+            text-align: left;
+        }
+
+.om_mig_section h1 {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.om_mig_section h2, .om_mig_section h3, .om_mig_section h4 {
+    font-size: medium;
+    padding: 10px;
+}
+}
