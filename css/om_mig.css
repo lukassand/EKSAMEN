@@ -1,14 +1,14 @@
 .om_mig_section {
     margin: 20px;
     padding: 20px;
-    margin-top: -1px;
-    border: 5px solid blue;
+    margin-top: 20px;
+    border: 5px solid var(--color-border1);
     font-size: small;
 }
 
  .om_mig_img{
         width: 300px;   
-        border: #ff0000 5px groove;
+        border: var(--color-border2) 5px solid;
 }
 
 /* layout: stack on small screens, side-by-side on larger */

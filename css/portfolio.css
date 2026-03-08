@@ -1,6 +1,6 @@
 .portfolio_top {
-border: 5px solid blue;
-background-color: rgb(255, 255, 162);
+border: 5px solid var(--color-border1);
+background-color: var(--color-bg2);
 margin: 20px;
 padding: 20px;
 text-align: center;
@@ -63,10 +63,10 @@ margin-top: 25px;
 }
 
 #TEMA1, #TEMA2, #TEMA3, #TEMA4, #TEMA5, #TEMA6{
-    border: #0011ff 5px solid;
+    border: var(--color-border1) 5px solid;
     margin: 50px;
     padding: 30px;
-    background-color: rgb(255, 255, 162);
+    background-color: var(--color-bg2)
 }
 
 #TEMA1 img, #TEMA2 img, #TEMA3 img, #TEMA4 img, #TEMA5 img, #TEMA6 img{
