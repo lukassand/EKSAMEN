@@ -5,7 +5,9 @@
 }
 
 
-
+.forside_knap{
+margin-top: 20px;
+}
 
 
 body {
@@ -16,12 +18,24 @@ body {
   padding: 15px;
   background-color: #8cff00;
   border-bottom: 5px solid #539700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo img {
-  margin-bottom: -50px;
-  border: 5px dotted black;
+.logo img{ 
+  max-width: 120px;
 }
+
+.logo {
+  background-image: url('/img/stars.gif');
+    border: 5px solid red;
+    display: inline-block;
+  }
+
+  .logo:hover{
+   animation: hueLoop 0.5s infinite alternate;
+} 
 
 .burger {
   display: block;
@@ -34,7 +48,7 @@ body {
   border: none;
   padding: 0;
   cursor: pointer;
-  margin-left: auto
+  margin-right: 20px;
 }
 
 .burger span {
@@ -61,7 +75,7 @@ body {
   top: 80px; /* under header */
   right: 16px;
   width: 280px;
-  border: 5px dotted #000000;
+  border: 5px solid red;
 }
 
 .mobile-menu ul {
@@ -132,7 +146,7 @@ box-shadow: inset 0 0 0 0 #8cff00;
   gap: 200px;
   list-style: none; 
   margin-top: 25px;
-margin-right: 250px;
+margin-right: 220px;
 font-size: larger;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
@@ -140,10 +154,14 @@ font-weight: bold;
   
 .logo {
     margin-right: auto;
+    border: 5px solid red;
+   
 }
 
 .logo img {
-border: 5px dotted black;
+max-width: 120px;
+background-image: url('img/stars.gif');
+
 }
 
 .stripes{
@@ -167,4 +185,13 @@ border: 5px dotted black;
  .mobile-menu {
   display: none;
 }
+}
+
+@keyframes hueLoop {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
 }

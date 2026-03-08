@@ -1,0 +1,95 @@
+.portfolio_top {
+border: 5px solid blue;
+background-color: rgb(255, 255, 162);
+margin: 20px;
+padding: 20px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio_top h1 {
+padding-bottom: 20px;
+margin-top: 25px;
+}
+
+.tema_knapper ul{
+    list-style: none;
+    margin-top: 10px;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.tema_knapper li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.tema_knapper a, .tema_knapper a:visited {
+    text-decoration: none;
+    color: rgb(255, 6, 160);
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: #0011ff 1px 1px 2px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    margin: 0 -.25rem;
+  padding: 0 .25rem;
+}
+
+.tema_knapper a:hover {
+  box-shadow: inset 200px 0 0 0 #0011ff;
+  color: rgb(246, 255, 0);
+  font-size: 150%;
+}
+
+.vinkekatten{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.vinkekatten:hover {
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 1s ease-in-out;
+}
+
+#TEMA1, #TEMA2, #TEMA3, #TEMA4, #TEMA5, #TEMA6{
+    scroll-margin-top: 175px;
+}
+
+/* tema 1 */
+
+.tema1_brooklyn66{
+    max-width: 300px;
+}
+
+#TEMA1, #TEMA2, #TEMA3, #TEMA4, #TEMA5, #TEMA6{
+    border: #0011ff 5px solid;
+    margin: 50px;
+    padding: 30px;
+    background-color: rgb(255, 255, 162);
+}
+
+#TEMA1 img, #TEMA2 img, #TEMA3 img, #TEMA4 img, #TEMA5 img, #TEMA6 img{
+    display: block;
+    margin: 20px auto;
+  max-width: 300px;
+}
+
+.tema5_forkertegave{
+    max-width: 300px;
+}
+
+.tema5_carharrtvideo{
+    max-width: 300px;
+}
+
+
+
+
+@media (max-width: 768px) {
+ .tema_knapper li {
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+}
+}
