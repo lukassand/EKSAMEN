@@ -248,6 +248,33 @@ grid-row: 2;
     grid-row: 3;
 }
 
+/* tema 4 */
+
+.tema4{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.tema4 img{
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.tema4 ul{
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: left;
+}
+
+
 /* tema 5*/
 
 .carhartt_video{
@@ -359,6 +386,24 @@ grid-row: 2;
     margin: 0 auto;
     margin-bottom: 50px;
 }
+
+.tema6_jaer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.tema6_jaer a, .tema6_jaer a:visited, .tema6_jaer a:hover {
+    text-decoration: none !important;
+    cursor: inherit;
+    color: black !important;
+    
+}
+
 
 
 #TEMA1, #TEMA2, #TEMA3, #TEMA4, #TEMA5, #TEMA6{
@@ -607,6 +652,19 @@ grid-row: 2;
 .emnesite ul{
     grid-row: 5;
     grid-column: 1;
+}
+
+.tema4{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 0px;
+}
+
+.tema4 ul{
+    grid-row: 1;
+    padding-top: 0px;
+    padding-bottom: 30px;
 }
 
 .carhartt_video{
