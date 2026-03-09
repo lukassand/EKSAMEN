@@ -111,8 +111,8 @@ body {
   text-align: center;
 }
 
-.mobile-menu li + li {
-  margin-top: 20px;
+.mobile-menu li {
+  margin-top: 10px;
 }
 
 .mobile-menu a {

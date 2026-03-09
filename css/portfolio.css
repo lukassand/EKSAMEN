@@ -56,11 +56,151 @@ margin-top: 25px;
     scroll-margin-top: 175px;
 }
 
+.ay{
+    font-family: 'Arial Rounded MT Bold', Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    color: rgb(237, 0, 0);
+    text-shadow: #2d00e2 1px 4px 3px;
+    padding-bottom: 70px;
+}
+
 /* tema 1 */
 
-.tema1_brooklyn66{
-    max-width: 300px;
+.tema1_visitkort{
+    align-items: start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
+.tema1_visitkort img {
+    grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.visitkort_text{
+    grid-column: 2;
+}
+
+.visitkort_text ul{
+    margin-top: 30px;
+}
+
+
+
+.tema1_website1{
+     display: grid;
+  grid-template-columns: auto 1fr;
+ column-gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.tema1_website1 img {
+    grid-column: 1;
+  grid-row: 1 / span 3;
+}
+.website1_text{
+    grid-column: 2;
+}
+
+.website1_text ul{
+    margin-top: 30px;
+}
+
+.tema1_video{
+     display: grid;
+  grid-template-columns: auto 1fr;
+ column-gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.tema1_video img {
+    grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+/* tema 2 */
+
+.tema2_visitkort{
+display: grid;
+grid-template-columns: auto auto auto;
+column-gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.tema2_visitkort img {
+    grid-column: 1;
+}
+
+.visitkort_text2{
+    grid-column: 2;
+    grid-row: 1 / -1;
+}
+
+.verdi{
+  display: grid;
+grid-template-columns: auto auto auto;
+column-gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.verdi img {
+    grid-column: 1;
+}
+
+.verdi_text{
+    grid-column: 2;
+    grid-row: 1
+}
+
+.tema2_20bokse{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.tema2_20bokse img {
+    grid-column: 1;
+}
+
+.tema2_20bokse_text{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.tema2_studiestartsproeve{
+    display: grid;
+      grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.computer_img1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.computer_img2{
+    grid-column: 1;
+    grid-row:2;
+}
+
+
 
 #TEMA1, #TEMA2, #TEMA3, #TEMA4, #TEMA5, #TEMA6{
     border: var(--color-border1) 5px solid;
@@ -72,18 +212,45 @@ margin-top: 25px;
 #TEMA1 img, #TEMA2 img, #TEMA3 img, #TEMA4 img, #TEMA5 img, #TEMA6 img{
     display: block;
     margin: 20px auto;
-  max-width: 300px;
+  max-width: 500px;
+  border: solid var(--color-border1) 5px;
 }
 
-.tema5_forkertegave{
-    max-width: 300px;
+#TEMA1 a, #TEMA2 a, #TEMA3 a, #TEMA4 a, #TEMA5 a, #TEMA6 a{
+    text-decoration: underline;
+    color: rgb(0, 0, 181);
 }
 
-.tema5_carharrtvideo{
-    max-width: 300px;
+#TEMA1 a:hover, #TEMA2 a:hover, #TEMA3 a:hover, #TEMA4 a:hover, #TEMA5 a:hover, #TEMA6 a:hover{
+    background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  
+  background-size: 300%;
+  animation: rainbow 2s linear infinite;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 110%;
 }
 
 
+@keyframes rainbow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
 
 
 @media (max-width: 768px) {
@@ -92,4 +259,156 @@ margin-top: 25px;
     padding: 10px 0;
     font-size: 20px;
 }
+
+#TEMA1 img, #TEMA2 img, #TEMA3 img, #TEMA4 img, #TEMA5 img, #TEMA6 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio_top{
+    font-size: 90%
+}
+
+.tema1_visitkort{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.visitkort_text {
+    display: contents;
+}
+
+.tema1_visitkort h2{
+  grid-row: 1;
+}
+
+.tema1_visitkort img {
+  grid-row: 2;
+}
+
+.tema1_visitkort ul {
+  grid-row: 3;
+  margin-top: 0;
+}
+
+.tema1_website1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.website1_text{
+    display: contents;
+}
+
+.tema1_website1 h2{
+    grid-row: 1;
+}
+
+.tema1_website1 img{
+    grid-row: 3;
+}
+
+.tema1_website1 p{
+    grid-row: 2;
+}
+
+.tema1_website1 ul{
+    grid-row: 4;
+    margin-top: 0;
+}
+
+
+.tema1_video{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.tema1_video .video_text{
+    display: contents;
+}
+
+.tema1_video img{
+    grid-row: 3;
+}
+
+.tema2_visitkort{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 0px;
+}
+
+.visitkort_img1{
+    grid-row: 3;
+}
+
+.visitkort_img2{
+    grid-row: 4;
+}
+
+.visitkort_text2{
+    display: contents;
+}
+
+.verdi{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 0px;
+}
+
+.verdi_img1{
+    grid-row: 3;
+}
+
+.verdi_img2{
+    grid-row: 4;
+}
+
+.verdi_text{
+    display: contents;
+}
+
+.tema2_20bokse{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 0px;
+}
+
+.tema2_20bokse img{
+    grid-row: 2;
+}
+
+.tema2_20bokse_text{
+    display: contents;
+}
+
+.tema2_20bokse_text h2{
+    grid-row: 1;
+}
+
+.tema2_studiestartsproeve{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 0px;
+}
+
+.computer_img1{
+    grid-row: 3;
+}
+
+.computer_img2{
+    grid-row: 4;
+}
+
+.tema2_studiestartsproeve_text{
+    display: contents
+}
+
+
 }
