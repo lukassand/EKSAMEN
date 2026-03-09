@@ -308,9 +308,22 @@ grid-row: 2;
 
 /* TEMA 5 cafetten */
 
-.cafetten h2, p, ul{
+.cafetten h2, .cafetten p{
     display: flex;
     justify-content: center;
+}
+
+.cafetten ul{
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    text-align: left;
+}
+
+.cafetten li{
+    display: list-item;
 }
 
 .cafetten_wireframes{
@@ -334,6 +347,15 @@ grid-row: 2;
     grid-template-rows: auto auto;
     column-gap: 10px;
     max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.cafetten_final{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
@@ -646,6 +668,24 @@ grid-column: 1;
     grid-column: 1;
 }
 
+.cafetten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cafetten_wireframes,
+.cafetten_research,
+.cafetten_final{
+    display: contents;
+}
+
+.cafetten img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
 
 
 
