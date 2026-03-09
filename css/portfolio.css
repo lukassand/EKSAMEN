@@ -1,3 +1,7 @@
+ul{
+    margin-top: 30px;
+}
+
 .portfolio_top {
 border: 5px solid var(--color-border1);
 background-color: var(--color-bg2);
@@ -202,6 +206,139 @@ column-gap: 50px;
 
 
 
+/* tema3 */
+
+.emnesite{
+     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: auto auto auto;
+    column-gap: 30px;
+    max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;;
+}
+
+.emnesite img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.emnesite1{
+grid-column: 1;
+grid-row: 2;
+}
+.emnesite2{
+    grid-column: 2;
+    grid-row: 2;
+}
+.emnesite3{
+grid-column: 3;
+grid-row: 2;
+}
+
+.emnesite h2{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.emnesite ul{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* tema 5*/
+
+.carhartt_video{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.carhartt_video img {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.carhartt_video_text{
+    grid-column: 2;
+}
+
+.vinter_eventyr{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.vinter_eventyr img{
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.vinter_eventyr_text{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.pics2{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+}
+
+.pics2 .vintereventyr2{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.pics2 .vintereventyr3{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+/* TEMA 5 cafetten */
+
+.cafetten h2, p, ul{
+    display: flex;
+    justify-content: center;
+}
+
+.cafetten_wireframes{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.cafetten_wireframes img{
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.cafetten_research{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
 #TEMA1, #TEMA2, #TEMA3, #TEMA4, #TEMA5, #TEMA6{
     border: var(--color-border1) 5px solid;
     margin: 50px;
@@ -211,9 +348,9 @@ column-gap: 50px;
 
 #TEMA1 img, #TEMA2 img, #TEMA3 img, #TEMA4 img, #TEMA5 img, #TEMA6 img{
     display: block;
-    margin: 20px auto;
   max-width: 500px;
   border: solid var(--color-border1) 5px;
+  margin: 10px;
 }
 
 #TEMA1 a, #TEMA2 a, #TEMA3 a, #TEMA4 a, #TEMA5 a, #TEMA6 a{
@@ -375,12 +512,13 @@ column-gap: 50px;
 .tema2_20bokse{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto auto;
     row-gap: 0px;
+
 }
 
 .tema2_20bokse img{
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .tema2_20bokse_text{
@@ -389,6 +527,16 @@ column-gap: 50px;
 
 .tema2_20bokse_text h2{
     grid-row: 1;
+}
+
+.tema2_20bokse_text p{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.tema2_20bokse_text ul{
+    grid-row: 4;
+    grid-column: 1;
 }
 
 .tema2_studiestartsproeve{
@@ -410,5 +558,102 @@ column-gap: 50px;
     display: contents
 }
 
+.emnesite{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 10px;}
+
+    .emnesite1{
+        grid-row: 2;
+        grid-column: 1;
+    }
+.emnesite2{
+    grid-row: 3;
+    grid-column: 1;
+}
+.emnesite3{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.emnesite h2{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.emnesite ul{
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.carhartt_video{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 0px;
+}
+
+.carhartt_video img{
+    grid-row: 3;
+}
+
+.carhartt_video_text{
+    display: contents;
+}
+
+.carhartt_video_text h2{
+    grid-row: 1;
+}
+
+.vinter_eventyr{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 0px;
+}
+
+.vinter_eventyr_text{
+    display: contents;
+}
+
+.vinter_eventyr h2{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.vinter_eventyr p{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.vintereventyr1{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.vintereventyr2{
+    grid-row: 4;
+      grid-column: 1;
+}
+
+.vintereventyr3{
+    grid-row: 5;
+grid-column: 1;
+}
+
+.vinter_eventyr ul{
+    grid-row: 6;
+    grid-column: 1;
+}
+
+
+
+
+
+
+ul{
+    margin-top: 0px;
+    padding-top: 0px;
+}
 
 }
